@@ -1,18 +1,18 @@
-require 'rails_helper'
+require 'spec_helper'
 
-RSpec.describe PagesController, :type => :controller do
+describe PagesController do
 
-  describe "GET home" do
+  describe "GET 'home'" do
     it "returns http success" do
-      get :home
-      expect(response).to be_success
+      get 'home'
+      response.should be_success
     end
   end
 
-  describe "GET contact" do
+  describe "GET 'contact'" do
     it "returns http success" do
-      get :contact
-      expect(response).to be_success
+      get 'contact'
+      response.should be_success
     end
   end
 
