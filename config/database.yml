@@ -11,7 +11,7 @@ development:
   username: users_rails
   password: fcehd84efer6
 
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: sample_app_test
@@ -27,3 +27,6 @@ production:
   username: users_rails
   password: fcehd84efer6
 
+
+cucumber:
+  <<: *test
